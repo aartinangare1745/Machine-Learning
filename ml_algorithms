@@ -1,0 +1,184 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOOQKnRDk8H5ZNOX6vf2CcA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aartinangare1745/Machine-Learning/blob/main/ml_algorithms\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "BOp15cUfYdfM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "59760446-4bb6-482b-e0f6-1d1022396585"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1. 2. 3. 4. 5. 6. 7. 8.]\n",
+            "[0. 0. 0. 0. 1. 1. 1. 1.]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "X=np.array([1,2,3,4,5,6,7,8],dtype=float)\n",
+        "Y=np.array([0,0,0,0,1,1,1,1],dtype=float)\n",
+        "\n",
+        "print(X)\n",
+        "print(Y)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sigmoid(z):\n",
+        "  return 1/(1+(np.exp(-z)))"
+      ],
+      "metadata": {
+        "id": "2KFsrby0Zzus"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(sigmoid(-5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u_Vd3bUKaHIL",
+        "outputId": "0f000ea3-6d14-4cb8-edbe-6cfdb30ff3c2"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.0066928509242848554\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(sigmoid(0))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nzfHNKvpaKxD",
+        "outputId": "2455a23d-2c6d-4915-f19a-d2f12afe7de1"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(sigmoid(1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Tm_KHltCaNjs",
+        "outputId": "10ad0b66-4d41-4db9-b934-b1993ee40b27"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.7310585786300049\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(sigmoid(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hnv-eQXfaQGg",
+        "outputId": "d2bb0c95-106e-4c96-b2bf-a629e6c78fbe"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.9933071490757153\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "w=0\n",
+        "b=0"
+      ],
+      "metadata": {
+        "id": "fWWEgRPqaXJ-"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "uOp-1Y8pbCPi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
